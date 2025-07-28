@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kanishk Karan | Technologist, Cybersecurity Strategist, Program Manager</title>
-    <meta name="description" content="Kanishk Karan's personal portfolio. Technologist with cybersecurity, OSINT, and program management expertise. Experience at YouTube, Twitter, and NATO-aligned institutions.">
+    <title>Kanishk Karan</title>
     <style>
         * {
             margin: 0;
@@ -87,18 +86,18 @@
             line-height: 1.8;
         }
 
-        .blog-post, .project-item {
+        .blog-post, .project-item, .experience-item {
             margin-bottom: 40px;
             padding-bottom: 30px;
             border-bottom: 1px solid #e9ecef;
         }
 
-        .blog-post:last-child, .project-item:last-child {
+        .blog-post:last-child, .project-item:last-child, .experience-item:last-child {
             border-bottom: none;
             margin-bottom: 0;
         }
 
-        .post-title, .project-title {
+        .post-title, .project-title, .experience-title {
             font-size: 1.3rem;
             color: #2c3e50;
             margin-bottom: 8px;
@@ -114,16 +113,17 @@
             color: #0056b3;
         }
 
-        .post-excerpt, .project-description {
+        .post-excerpt, .project-description, .experience-description {
             color: #6c757d;
             margin-bottom: 10px;
             line-height: 1.6;
         }
 
-        .post-meta {
+        .post-meta, .experience-meta {
             font-size: 0.9rem;
             color: #868e96;
             font-style: italic;
+            margin-bottom: 15px;
         }
 
         .project-links {
@@ -139,6 +139,27 @@
 
         .project-links a:hover {
             text-decoration: underline;
+        }
+
+        .achievement-list {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .achievement-list li {
+            color: #495057;
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.6;
+        }
+
+        .achievement-list li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #0056b3;
+            font-weight: bold;
         }
 
         .skills-grid {
@@ -201,29 +222,282 @@
             font-size: 0.9rem;
         }
 
-        .recent-indicator {
-            background: #d4edda;
-            color: #155724;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 0.8rem;
-            margin-right: 10px;
+        .highlight {
+            background: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #0056b3;
+            margin: 15px 0;
+            font-style: italic;
+        }
+
+        .education-item {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .education-item:last-child {
+            border-bottom: none;
+        }
+
+        .degree {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+
+        .institution {
+            color: #6c757d;
+            font-size: 0.95rem;
         }
 
         @media (max-width: 600px) {
             body {
                 padding: 20px 15px;
             }
+            
             .site-title {
                 font-size: 2rem;
             }
+            
             nav ul {
                 flex-direction: column;
                 gap: 15px;
             }
+            
             .skills-grid {
                 grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
+<body>
+    <header>
+        <h1 class="site-title">Kanishk Karan</h1>
+        <p class="site-subtitle">Senior Strategist, Cybersecurity Professional, and Program Manager</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="section">
+        <div class="intro">
+            <p>Cybersecurity professional with over 7 years of experience at YouTube, Twitter, and Atlantic Council (NATO-aligned). I specialize in platform security, threat intelligence, and program management at scale. My work focuses on information operations, platform manipulation detection, and building organizational security frameworks that protect democratic institutions and major technology platforms.</p>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <h2>Professional Experience</h2>
+        
+        <article class="experience-item">
+            <h3 class="experience-title">Senior Strategist, YouTube</h3>
+            <p class="experience-meta">Singapore | September 2022 - Present</p>
+            <div class="highlight">
+                Leading content clustering tool launches and policy implementations across multiple vendor sites, with responsibility for critical Trust & Safety metrics.
+            </div>
+            <ul class="achievement-list">
+                <li>Independent Program Manager for YouTube Content Clustering tool launch, managing full lifecycle from testing to scaling</li>
+                <li>Resident data contact for Violative View Rate, Quality metrics, and SeCR (Trust & Safety metrics)</li>
+                <li>Built cross-functional programs for ML-based systems targeting monetization-sensitive content</li>
+                <li>Led A/B testing for new enforcement launches and process improvements</li>
+                <li>Drafted policy updates resulting in streamlined enforcement for graphic content violations</li>
+            </ul>
+        </article>
+
+        <article class="experience-item">
+            <h3 class="experience-title">Senior Threat Investigator, Twitter</h3>
+            <p class="experience-meta">Singapore | October 2020 - August 2022</p>
+            <div class="highlight">
+                First dedicated APAC specialist covering platform threat actors, achieving 98% accuracy in automated threat detection while reducing escalation rates by 95%.
+            </div>
+            <ul class="achievement-list">
+                <li>Addressed platform security issues including information operations, cyberespionage, and account security across India, China, Pakistan, and Indonesia</li>
+                <li>Developed automated spear phishing solutions with ~98% accuracy and 95% reduction in escalation rates</li>
+                <li>Built open-source investigations framework used across US, APAC, and EMEA regions</li>
+                <li>Created Jupyter notebooks for complex investigations, reducing investigation friction by 65%</li>
+                <li>Collaborated with Public Policy teams on external communications for security incidents</li>
+            </ul>
+        </article>
+
+        <article class="experience-item">
+            <h3 class="experience-title">Researcher, Atlantic Council DFRLab</h3>
+            <p class="experience-meta">Washington DC | June 2018 - August 2020</p>
+            <div class="highlight">
+                Among the first researchers to publicly document Russian information operations targeting U.S. elections, with findings used by intelligence agencies and major news organizations.
+            </div>
+            <ul class="achievement-list">
+                <li>Investigated 2016 Russian targeting of U.S. elections, with work acknowledged by intelligence agencies</li>
+                <li>Trained approximately 1,000 professionals including state officials, journalists, and researchers on digital security and OSINT techniques</li>
+                <li>Published reports covered by The Washington Post, Quartz, Reuters, Bloomberg, and WIRED</li>
+                <li>Contributed to official threat assessments for U.S. State Department, G7, and government stakeholders</li>
+                <li>Discovered multiple advanced platform manipulation threat actors leading to proactive platform mitigation</li>
+            </ul>
+        </article>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Selected Projects</h2>
+
+        <div class="project-item">
+            <h3 class="project-title">Platform Security Framework</h3>
+            <p class="project-description">Developed comprehensive security assessment methodology for social media platforms, focusing on information operations detection and automated threat response systems.</p>
+            <div class="project-links">
+                <a href="#">Research Paper</a>
+                <a href="#">Implementation Guide</a>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <h3 class="project-title">OSINT Investigation Toolkit</h3>
+            <p class="project-description">Open-source collection of tools and methodologies for digital investigations, used by researchers across multiple organizations for threat intelligence and platform manipulation analysis.</p>
+            <div class="project-links">
+                <a href="#">GitHub</a>
+                <a href="#">Documentation</a>
+            </div>
+        </div>
+
+        <div class="project-item">
+            <h3 class="project-title">Geospatial Data Visualization</h3>
+            <p class="project-description">Interactive mapping solutions for tracking information operations and coordinated inauthentic behavior across platforms, with focus on OpenStreetMap integration.</p>
+            <div class="project-links">
+                <a href="#">Live Demo</a>
+                <a href="#">Technical Details</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="research" class="section">
+        <h2>Research & Publications</h2>
+
+        <article class="blog-post">
+            <h3 class="post-title"><a href="#">Nation-State Information Operations: Patterns and Detection</a></h3>
+            <p class="post-excerpt">Analysis of coordinated information campaigns targeting democratic processes, with focus on attribution methods and platform response strategies.</p>
+            <p class="post-meta">Published in collaboration with Atlantic Council | 2020</p>
+        </article>
+
+        <article class="blog-post">
+            <h3 class="post-title"><a href="#">Automated Threat Detection in Platform Security</a></h3>
+            <p class="post-excerpt">Machine learning approaches to identifying sophisticated platform manipulation, including spear phishing and coordinated inauthentic behavior.</p>
+            <p class="post-meta">Research presented at security conferences | 2021</p>
+        </article>
+
+        <article class="blog-post">
+            <h3 class="post-title"><a href="#">Digital Security Training for Journalists</a></h3>
+            <p class="post-excerpt">Comprehensive frameworks for protecting media professionals from targeted digital attacks, developed through training programs for over 1,000 professionals.</p>
+            <p class="post-meta">Training materials and methodology | 2019</p>
+        </article>
+
+        <p><a href="#" style="color: #0056b3; text-decoration: none;">All publications</a></p>
+        <p style="color: #6c757d; font-size: 0.9rem;">Research archives covering platform security, information operations, and organizational security frameworks from 2018-present.</p>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Expertise & Tools</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Cybersecurity</h3>
+                <ul>
+                    <li>Threat Intelligence</li>
+                    <li>OSINT Methods</li>
+                    <li>Platform Security</li>
+                    <li>Information Operations</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>Python & SQL</li>
+                    <li>Data Analysis (R)</li>
+                    <li>Jupyter Notebooks</li>
+                    <li>Machine Learning</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Program Management</h3>
+                <ul>
+                    <li>Cross-functional Teams</li>
+                    <li>Policy Development</li>
+                    <li>A/B Testing</li>
+                    <li>Process Improvement</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <ul>
+                    <li>English (Native)</li>
+                    <li>Hindi</li>
+                    <li>Urdu</li>
+                    <li>Nepali, Punjabi</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section">
+        <h2>Education & Recognition</h2>
+        
+        <div class="education-item">
+            <div class="degree">Master of Science, Data Journalism</div>
+            <div class="institution">Columbia University, Graduate School of Journalism | New York, NY | 2018</div>
+        </div>
+
+        <div class="education-item">
+            <div class="degree">Post-Graduate Diploma in English Journalism</div>
+            <div class="institution">Indian Institute of Mass Communication | New Delhi, India | 2016</div>
+        </div>
+
+        <div class="education-item">
+            <div class="degree">Bachelor of Technology in Civil Engineering</div>
+            <div class="institution">Manav Rachna International University | Delhi-NCR, India | 2015</div>
+        </div>
+
+        <div style="margin-top: 30px;">
+            <h3 style="font-size: 1.2rem; color: #2c3e50; margin-bottom: 15px;">Awards & Recognition</h3>
+            <ul class="achievement-list">
+                <li>David Bohrman Annual Scholar, Columbia University (2017)</li>
+                <li>Jean Marie Olive Scholarship, Columbia University (2017)</li>
+                <li>R D Sethna Scholarship for academic excellence</li>
+                <li>Patent: Generation of Electricity through Speed Breakers</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <p><a href="https://linkedin.com/in/kanishkkaran">LinkedIn</a></p>
+            <p><a href="#">GitHub</a></p>
+            <p><a href="#">Google Scholar</a></p>
+            <p style="margin-top: 20px; font-style: italic;">Open to discussions about cybersecurity strategies, platform safety initiatives, and organizational security frameworks.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Kanishk Karan. Focus on building secure, democratic digital spaces.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
